@@ -91,7 +91,7 @@ class SeedDMS_ExtForwardAuth_initDMS { /* {{{ */
 
 		$db = $dms->getDB();
 		if(!class_exists('SeedDMS_Session'))
-			require_once("/var/www/seeddms/seeddms-6.0.18/inc/inc.ClassSession.php");
+			require_once("../inc/inc.ClassSession.php");
 
 		/**
 		 * Get Username out of Header which is set in settings
