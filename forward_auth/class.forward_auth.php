@@ -28,7 +28,7 @@
  *
  * @author  Eweol <eweol@outlook.com>
  * @package SeedDMS
- * @subpackage  foward_auth
+ * @subpackage  forward_auth
  */
 class SeedDMS_ExtForwardAuth extends SeedDMS_ExtBase {
 
@@ -75,12 +75,12 @@ class SeedDMS_ExtForwardAuth_initDMS { /* {{{ */
 		$headers = getRequestHeaders();
 
         // We bail out if we are not configured
-        if(!isset($extSettings["foward_auth"]['foward_authEnable']))
+        if(!isset($extSettings["forward_auth"]['forward_authEnable']))
             return;
 
         // We bail out if we are disabled
-        if($extSettings["foward_auth"]['foward_authEnable'] !== "1")
-        if($extSettings["foward_auth"]['foward_authEnable'] !== "1")
+        if($extSettings["forward_auth"]['forward_authEnable'] !== "1")
+        if($extSettings["forward_auth"]['forward_authEnable'] !== "1")
             return;
 		
 
@@ -96,7 +96,7 @@ class SeedDMS_ExtForwardAuth_initDMS { /* {{{ */
 		/**
 		 * Get Username out of Header which is set in settings
 		 */
-        $username = $headers[$extSettings["foward_auth"]['usernameHeader']];
+        $username = $headers[$extSettings["forward_auth"]['usernameHeader']];
 
 		$user = $dms->getUserByLogin($username);
 

@@ -1,5 +1,5 @@
 <?php
-$EXT_CONF['foward_auth'] = array(
+$EXT_CONF['forward_auth'] = array(
 	'title' => 'Forward Authentication Extension',
 	'description' => 'This extension provide login via Forward Authentication Header',
 	'disable' => true,
@@ -7,7 +7,7 @@ $EXT_CONF['foward_auth'] = array(
 	'releasedate' => '2022-10-23',
 	'author' => array('name'=>'Eweol', 'email'=>'eweol@outlook.com'),
 	'config' => array(
-		'foward_authEnable' => array(
+		'forward_authEnable' => array(
 			'title'=>'Enable ForwardAuth Login',
 			'type'=>'checkbox',
 		),
@@ -23,7 +23,7 @@ $EXT_CONF['foward_auth'] = array(
 	'icon' => 'icon.svg',
 	'changelog' => 'changelog.md',
 	'class' => array(
-		'file' => 'class.foward_auth.php',
+		'file' => 'class.forward_auth.php',
 		'name' => 'SeedDMS_ExtForwardAuth'
 	),
 );
