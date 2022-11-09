@@ -63,7 +63,7 @@ class SeedDMS_ExtForwardAuth_initDMS { /* {{{ */
 				if (substr($key, 0, 5) <> 'HTTP_') {
 					continue;
 				}
-				$header = str_replace(' ', '-', ucwords(str_replace('_', ' ', strtolower(substr($key, 5)))));
+				$header = strtolower(str_replace(' ', '-', ucwords(str_replace('_', ' ', strtolower(substr($key, 5))))));
 				$headers[$header] = $value;
 			}
 			return $headers;
@@ -80,7 +80,6 @@ class SeedDMS_ExtForwardAuth_initDMS { /* {{{ */
 
         // We bail out if we are disabled
         if($extSettings["forward_auth"]['forward_authEnable'] !== "1")
-        if($extSettings["forward_auth"]['forward_authEnable'] !== "1")
             return;
 		
 
@@ -96,7 +95,7 @@ class SeedDMS_ExtForwardAuth_initDMS { /* {{{ */
 		/**
 		 * Get Username out of Header which is set in settings
 		 */
-        $username = $headers[$extSettings["forward_auth"]['usernameHeader']];
+        $username = $headers[strtolower($extSettings["forward_auth"]['usernameHeader'])];
 
 		$user = $dms->getUserByLogin($username);
 
