@@ -3,8 +3,8 @@ $EXT_CONF['forward_auth'] = array(
 	'title' => 'Forward Authentication Extension',
 	'description' => 'This extension provide login via Forward Authentication Header',
 	'disable' => true,
-	'version' => '1.0.0	',
-	'releasedate' => '2022-10-23',
+	'version' => '1.0.1',
+	'releasedate' => '2022-11-13',
 	'author' => array('name'=>'Eweol', 'email'=>'eweol@outlook.com'),
 	'config' => array(
 		'forward_authEnable' => array(

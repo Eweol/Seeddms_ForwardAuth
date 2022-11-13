@@ -42,17 +42,17 @@ class SeedDMS_ExtForwardAuth extends SeedDMS_ExtBase {
 	 * $GLOBALS['LANG'] : the language array with translations for all languages
 	 * $GLOBALS['SEEDDMS_HOOKS'] : all hooks added so far
 	 */
-	function init() { /* {{{ */
+	function init() { 
 		$GLOBALS['SEEDDMS_HOOKS']['initDMS'][] = new SeedDMS_ExtForwardAuth_initDMS;
-	} /* }}} */
+	} 
 
-	function main() { /* {{{ */
-	} /* }}} */
+	function main() { 
+	} 
 }
 
-class SeedDMS_ExtForwardAuth_initDMS { /* {{{ */
+class SeedDMS_ExtForwardAuth_initDMS { 
 
-	function postInitDMS($array) { /* {{{ */
+	function postInitDMS($array) { 
 
 		/**
 		 * Function to Cache all Headers from request
@@ -90,7 +90,7 @@ class SeedDMS_ExtForwardAuth_initDMS { /* {{{ */
 
 		$db = $dms->getDB();
 		if(!class_exists('SeedDMS_Session'))
-			require_once("../inc/inc.ClassSession.php");
+			require_once("./inc/inc.ClassSession.php");
 
 		/**
 		 * Get Username out of Header which is set in settings
@@ -159,5 +159,5 @@ class SeedDMS_ExtForwardAuth_initDMS { /* {{{ */
 			$_COOKIE["mydms_session"] = $id;
         }
 
-	} /* }}} */
-} /* }}} */
+	} 
+} 
