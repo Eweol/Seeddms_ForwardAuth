@@ -1,6 +1,6 @@
 # SeedDms ForwardAuth Extension
 
-This is a SeedDms extension that provides support for reverse proxy forward auth login via Traefik for example. The username of the user to login must be present in SeedDme and must be forwarded by the reverse proxy via HTTP header.
+This is a SeedDms extension that provides support for reverse proxy forward auth login via Traefik for example. The username of the user to login must be present in SeedDms and must be forwarded by the reverse proxy via HTTP header.
 
 ## Install
 

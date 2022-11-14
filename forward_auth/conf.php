@@ -3,16 +3,16 @@ $EXT_CONF['forward_auth'] = array(
 	'title' => 'Forward Authentication Extension',
 	'description' => 'This extension provide login via Forward Authentication Header',
 	'disable' => true,
-	'version' => '1.0.1',
-	'releasedate' => '2022-11-13',
-	'author' => array('name'=>'Eweol', 'email'=>'eweol@outlook.com'),
+	'version' => '1.1.0',
+	'releasedate' => '2022-11-14',
+	'author' => array('name'=>'Eweol', 'email'=>'eweol@outlook.com', 'company'=>'Unimain'),
 	'config' => array(
 		'forward_authEnable' => array(
 			'title'=>'Enable ForwardAuth Login',
 			'type'=>'checkbox',
 		),
 		'usernameHeader' => array(
-			'title'=>'Header Name which holds Username to login',
+			'title'=>'Header Name which provide Username to login',
 			'type'=>'input',
 			'size'=>60,
 		),
@@ -24,7 +24,7 @@ $EXT_CONF['forward_auth'] = array(
 	'changelog' => 'changelog.md',
 	'class' => array(
 		'file' => 'class.forward_auth.php',
-		'name' => 'SeedDMS_ExtForwardAuth'
+		'name' => 'SeedDMS_ForwardAuth'
 	),
 );
 ?>
